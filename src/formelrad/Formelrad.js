@@ -8,7 +8,8 @@ export default function Formelrad() {
         u: 10,
         i: 2,
         r: "",
-        p: ""
+        p: "",
+        message: ""
     })
 
     const calculate = (event) => {
@@ -63,6 +64,7 @@ export default function Formelrad() {
                         setValues(values => ({...values, p: e.target.value}))
                     }}/>
                     <button type="submit">Calculate</button>
+                    <p>{values.message}</p>
                 </form>
             </section>
         </>
